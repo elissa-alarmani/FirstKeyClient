@@ -10,7 +10,7 @@ const CollegeAppsWidget = ({userId }) => {
 
   const getCollegApps = async () => {
     const response = await fetch(
-      `http://localhost:3001/collegeApps/${userId}/collegeApps`,
+      `https://first-key.herokuapp.com/${userId}/collegeApps`,
       {
         method: "GET",
         headers: { Authorization: `Bearer ${token}` },

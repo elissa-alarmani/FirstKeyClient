@@ -28,7 +28,7 @@ const CollegeAppWidget = ({
 
   const handleDelete = async () => {
     try {
-      await fetch(`http://localhost:3001/collegeApps/${collegeAppUserId}/collegeApps/${collegeAppId}`, {
+      await fetch(`https://first-key.herokuapp.com/collegeApps/${collegeAppUserId}/collegeApps/${collegeAppId}`, {
         method: "DELETE",
         headers: { Authorization: `Bearer ${token}` },
       });
